@@ -1,3 +1,109 @@
+* {
+  background-color: rgb(105, 97, 104);
+}
+
+#main {
+  display: inline;
+  justify-content: center;
+}
+
 h1 {
-  color: aqua;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Rock Salt", cursive;
+}
+
+button {
+  margin: 0% 38%;
+  width: 80px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  border: black solid 1px;
+  border-radius: 5px 5px;
+  box-shadow: grey 1px 1px;
+  font-family: "Rock Salt", cursive;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+.inandout {
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinout {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: -4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: -4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: -4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: -4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: -4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
