@@ -7,7 +7,8 @@ const textA = document.createElement("h1");
 startButton.addEventListener("click", function () {
   startButton.setAttribute("style", "display: none;");
 
-  textM.textContent = "What do you call a sad cup of coffee?";
+  //   textM.textContent = "What do you call a sad cup of coffee?";
+  textM.textContent = "How do you make a Kleenex dance?";
   textM.setAttribute("style", "left-margin: 15px");
   picSpace.appendChild(textM);
 
@@ -22,7 +23,8 @@ function timer() {
     if (secondsLeft === 3) {
       textM.setAttribute("style", "display: none;");
 
-      textA.textContent = "Depresso";
+      //   textA.textContent = "Depresso";
+      textA.textContent = "Put a little boogie in it";
       picSpace.appendChild(textA);
     }
 
@@ -40,7 +42,8 @@ function bye() {
 
   gif.setAttribute(
     "src",
-    "https://media.giphy.com/media/c2ALUTZJNBkYw/giphy.gif"
+    // "https://media.giphy.com/media/c2ALUTZJNBkYw/giphy.gif"
+    "https://media.giphy.com/media/U8GLl0bUYFLZVquOfY/giphy.gif"
   );
 
   picSpace.appendChild(gif);
