@@ -9,8 +9,8 @@ startButton.addEventListener("click", function () {
 
   //   textM.textContent = "What do you call a sad cup of coffee?";
   //   textM.textContent = "How do you make a Kleenex dance?";
-  // textM.textContent = "What concert costs just 45 cents?";
-  textM.textContent = "How do you weigh a millennial?";
+  textM.textContent = "What concert costs just 45 cents?";
+  // textM.textContent = "How do you weigh a millennial?";
   textM.setAttribute("style", "left-margin: 15px");
   picSpace.appendChild(textM);
 
@@ -27,8 +27,8 @@ function timer() {
 
       //   textA.textContent = "Depresso";
       //   textA.textContent = "Put a little boogie in it";
-      // textA.textContent = "50 Cent featuring Nickelback!";
-      textA.textContent = "In Instagrams";
+      textA.textContent = "50 Cent featuring Nickelback!";
+      // textA.textContent = "In Instagrams";
       picSpace.appendChild(textA);
     }
 
@@ -48,8 +48,8 @@ function bye() {
     "src",
     // "https://media.giphy.com/media/c2ALUTZJNBkYw/giphy.gif"
     // "https://media.giphy.com/media/U8GLl0bUYFLZVquOfY/giphy.gif"
-    // "https://media.giphy.com/media/35kwc8vitI34c/giphy.gif"
-    "https://media.giphy.com/media/fDbzXb6Cv5L56/giphy.gif"
+    "https://media.giphy.com/media/35kwc8vitI34c/giphy.gif"
+    // "https://media.giphy.com/media/fDbzXb6Cv5L56/giphy.gif"
     // https://media.giphy.com/media/3o7TKDgHIAB13Eq0Ja/giphy.gif
   );
 
