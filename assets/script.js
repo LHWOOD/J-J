@@ -1,57 +1,57 @@
 const startButton = document.querySelector("#btn");
 const picSpace = document.getElementById("main");
-let secondsLeft = 7;
+let secondsLeft = 5;
 const textM = document.createElement("h1");
 const textA = document.createElement("h1");
 
 startButton.addEventListener("click", function () {
-  startButton.setAttribute("style", "display: none;");
+  fetch("https://icanhazdadjoke.com/", {
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
 
-  //   textM.textContent = "What do you call a sad cup of coffee?";
-  //   textM.textContent = "How do you make a Kleenex dance?";
-  // textM.textContent = "What concert costs just 45 cents?";
-  textM.textContent = "How do you weigh a millennial?";
-  textM.setAttribute("style", "left-margin: 15px");
-  picSpace.appendChild(textM);
+      // startButton.setAttribute("style", "display: none;");
+      textM.textContent = data.joke;
+      startButton.textContent = "Again?";
+      textM.setAttribute("style", "left-margin: 15px");
+      picSpace.appendChild(textM);
 
-  timer();
+      // timer();
+    });
 });
 
-function timer() {
-  // Sets interval in variable
-  let timerInterval = setInterval(function () {
-    secondsLeft--;
+// function timer() {
+//   // Sets interval in variable
+//   let timerInterval = setInterval(function () {
+//     secondsLeft--;
 
-    if (secondsLeft === 3) {
-      textM.setAttribute("style", "display: none;");
+//     if (secondsLeft === 0) {
+//       clearInterval(timerInterval);
+//       textM.setAttribute("style", "display: none;");
+//       startButton.setAttribute("style", "display: flex;");
+//     }
+//   }, 1000); //1000 represents miliseconds = 1 second
+// }
 
-      //   textA.textContent = "Depresso";
-      //   textA.textContent = "Put a little boogie in it";
-      // textA.textContent = "50 Cent featuring Nickelback!";
-      textA.textContent = "In Instagrams";
-      picSpace.appendChild(textA);
-    }
+// function bye() {
+//   textA.setAttribute("style", "display: none;");
 
-    if (secondsLeft === 0) {
-      clearInterval(timerInterval);
-      bye();
-    }
-  }, 1000); //1000 represents miliseconds = 1 second
-}
+//   const gif = document.createElement("img");
 
-function bye() {
-  textA.setAttribute("style", "display: none;");
+//   gif.setAttribute(
+//     "src",
+//     // "https://media.giphy.com/media/c2ALUTZJNBkYw/giphy.gif"
+//     // "https://media.giphy.com/media/U8GLl0bUYFLZVquOfY/giphy.gif"
+//     // "https://media.giphy.com/media/35kwc8vitI34c/giphy.gif"
+//     "https://media.giphy.com/media/fDbzXb6Cv5L56/giphy.gif"
+//     // https://media.giphy.com/media/3o7TKDgHIAB13Eq0Ja/giphy.gif
+//   );
 
-  const gif = document.createElement("img");
-
-  gif.setAttribute(
-    "src",
-    // "https://media.giphy.com/media/c2ALUTZJNBkYw/giphy.gif"
-    // "https://media.giphy.com/media/U8GLl0bUYFLZVquOfY/giphy.gif"
-    // "https://media.giphy.com/media/35kwc8vitI34c/giphy.gif"
-    "https://media.giphy.com/media/fDbzXb6Cv5L56/giphy.gif"
-    // https://media.giphy.com/media/3o7TKDgHIAB13Eq0Ja/giphy.gif
-  );
-
-  picSpace.appendChild(gif);
-}
+//   picSpace.appendChild(gif);
+// }
