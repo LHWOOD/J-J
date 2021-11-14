@@ -15,7 +15,7 @@ startButton.addEventListener("click", function () {
     })
     .then(function (data) {
       console.log(data);
-
+      console.log(typeof data);
       // startButton.setAttribute("style", "display: none;");
       textM.textContent = data.joke;
       startButton.textContent = "Again?";
