@@ -19,7 +19,7 @@ startButton.addEventListener("click", function () {
       // startButton.setAttribute("style", "display: none;");
       textM.textContent = data.joke;
       startButton.textContent = "Again?";
-      textM.setAttribute("style", "left-margin: 15px");
+      // textM.setAttribute("style", "display: inline");
       picSpace.appendChild(textM);
 
       // timer();
